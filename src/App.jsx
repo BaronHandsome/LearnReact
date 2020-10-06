@@ -1,19 +1,21 @@
 import React from 'react';
 import './App.css';
-import Profile from './components/Profile';
-import Header from './components/Header';
-import Nav from './components/Navigation';
-import Sidebar from './components/Sidebar';
-import Footer from './components/Footer';
+import MainPage from './components/MyPage/Profile';
+import Header from './components/Header/Header';
+import Nav from './components/Navigation/Navigation';
+import Sidebar from './components/Sidebar/Sidebar';
+import Footer from './components/Footer/Footer';
+import { Dialogs } from './components/Dialogs/DialogsContainer';
 
 const App = () => {
   return (
     <div className='app-wrapper'>
-      <Header></Header>
-      <Nav></Nav>
-      <Profile></Profile>
-      <Sidebar></Sidebar>
-      <Footer></Footer>
+      <Header />
+      <Nav />
+      {/* <MainPage /> */}
+      <Dialogs />
+      <Sidebar />
+      <Footer />
     </div>
   );
 }

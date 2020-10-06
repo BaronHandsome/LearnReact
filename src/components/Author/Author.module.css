@@ -1,0 +1,17 @@
+.mainBlock {
+    display: flex;
+}
+
+.avatarImg {
+    display: block;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.username {
+    margin: 0;
+}
+
+.date {
+    margin: 0;
+}
