@@ -10,6 +10,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import { News } from './components/News/News';
 import { Music } from './components/Music/Music';
 import { Friends } from './components/Friends/Friends';
+import { Artists } from './components/Artists/Artists';
 
 const App = () => {
   return (
@@ -24,11 +25,9 @@ const App = () => {
           <Route path='/Music' component={Music} />
           <Route />
         </div>
-        {/* <div className='sidebar'>
-          <Route path='/Friends' component={Friends}/>
-        </div> */}
         <Sidebar >
-          <Route path='/Dialogs' component={Friends}/>
+          <Route path='/Friends' component={Friends}/>
+          <Route path='/Artists' component={Artists}/>
         </Sidebar>
         <Footer />
       </div>

@@ -1,7 +1,6 @@
 .content { grid-area: content; }
 
 .content {
-    background-color: thistle;
     display: flex;
     flex-direction: column;
     align-items: center;

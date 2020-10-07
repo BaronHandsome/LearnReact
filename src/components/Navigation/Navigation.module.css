@@ -1,5 +1,24 @@
 .nav { grid-area: nav; }
 
 .nav {
-    background-color: tomato;
+    border-right: 2px solid #36B1C1;
+}
+
+ul {
+    padding: 15px 20px;
+}
+
+li {
+    font-family: 'Sniglet', cursive;
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.img {
+    width: 30px;
+    margin-right: 10px;
 }

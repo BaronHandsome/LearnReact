@@ -6,6 +6,7 @@
     "header header header"
     "nav content sidebar"
     "footer footer footer";
+    min-height: 100vh;
 }
 
 li {
