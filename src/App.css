@@ -2,13 +2,10 @@
   display: grid;
   grid-template-columns: 0.3fr 1fr 0.3fr;
   grid-template-rows: 60px 1fr 60px;
-  gap: 0px 0px;
   grid-template-areas:
     "header header header"
     "nav content sidebar"
     "footer footer footer";
-    height: 100vh;
-    margin: 0;
 }
 
 li {

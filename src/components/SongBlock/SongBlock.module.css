@@ -1,0 +1,13 @@
+.SongBlockContainer {
+    display: flex;
+    margin: 10px;
+}
+
+.iconBlock {
+    width: 50px;
+    height: 50px;
+}
+
+h3 {
+    margin: 10px 0 0 5px;
+}
