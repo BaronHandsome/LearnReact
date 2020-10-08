@@ -1,3 +1,11 @@
+.mainBlock {
+    display: flex;
+}
+
+.sidebarBlock {
+    /* width: 40%; */
+}
+
 .dialogsContainer {
     padding: 20px 50px;
 }

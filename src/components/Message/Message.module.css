@@ -1,3 +1,10 @@
+.mainBlock {
+    display: flex;
+}
+
+.contentBlock {
+    width: 80%;
+}
 
 .avatarBlock {
     display: flex;

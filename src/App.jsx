@@ -25,10 +25,10 @@ const App = () => {
           <Route path='/Music' component={Music} />
           <Route />
         </div>
-        <Sidebar >
+        {/* <Sidebar >
           <Route path='/Friends' component={Friends}/>
           <Route path='/Artists' component={Artists}/>
-        </Sidebar>
+        </Sidebar> */}
         <Footer />
       </div>
     </BrowserRouter>
