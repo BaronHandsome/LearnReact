@@ -3,29 +3,26 @@ import { NavLink } from 'react-router-dom';
 import classes from './Friends.module.css';
 import userImg from './user.jfif'
 
+
+export const DialogItem = (props) => {
+    let path = './userFriends' + props.id;
+
+    return (
+        <div className={classes.friendsBlock}>
+            <NavLink to={path}>
+                <p className={classes.name}><img src={props.photo} alt="User photo" className={classes.photo} />{props.name}</p>
+            </NavLink>
+        </div>
+    )
+}
+
 export const Friends = () => {
     return (
         <div className={classes.sidebarFriends}>
-            <div className={classes.friendsBlock}>
-                <NavLink to='./userFriends/1'>
-                    <p className={classes.name}><img src={userImg} alt="User photo" className={classes.photo} />User name 1</p>
-                </NavLink>
-            </div>
-            <div className={classes.friendsBlock}>
-                <NavLink to='./userFriends/2'>
-                    <p className={classes.name}><img src={userImg} alt="User photo" className={classes.photo} />User name 2</p>
-                </NavLink>
-            </div>
-            <div className={classes.friendsBlock}>
-                <NavLink to='./userFriends/3'>
-                    <p className={classes.name}><img src={userImg} alt="User photo" className={classes.photo} />User name 3</p>
-                </NavLink>
-            </div>
-            <div className={classes.friendsBlock}>
-                <NavLink to='./userFriends/4'>
-                    <p className={classes.name}><img src={userImg} alt="User photo" className={classes.photo} />User name 4</p>
-                </NavLink>
-            </div>
+            <DialogItem id='1' photo={userImg} name='User name 1' />
+            <DialogItem id='2' photo={userImg} name='User name 2' />
+            <DialogItem id='3' photo={userImg} name='User name 3' />
+            <DialogItem id='4' photo={userImg} name='User name 4' />
         </div>
     )
 }

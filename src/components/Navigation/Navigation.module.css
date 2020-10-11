@@ -3,6 +3,7 @@
 .nav {
     border-right: 2px solid #36B1C1;
     width: 100%!important;
+    min-width: 100px;
 }
 
 .liBlock {
@@ -61,9 +62,9 @@ color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(68,68,156,1) 43%, rgba(0,2
 }
 
 @media screen and (max-width: 800px) {
-    li {
+    /* li {
         display: none;
-    }
+    } */
 
     .img {
         width: 50px;

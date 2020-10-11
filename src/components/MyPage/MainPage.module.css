@@ -8,4 +8,9 @@
     align-items: center;
     padding: 20px 5%;
     /* width: 80%; */
+    flex: 5;
+}
+
+.sidebarBlock {
+    flex: 2;
 }

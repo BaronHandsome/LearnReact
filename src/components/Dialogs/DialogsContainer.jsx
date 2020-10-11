@@ -8,8 +8,8 @@ export const DialogsContainer = () => {
     return (
         <div className={classes.mainBlock}>
             <div className={classes.dialogsContainer}>
-                <Message />
-                <Message />
+                <Message message='DASsssssssssdsadsfi' />
+                <Message message='DASasdddddddddddddddddddddddddddddddddddddddddddddddddddddddddi'/>
             </div>
             <div className={classes.sidebarBlock}>
                 <Sidebar>

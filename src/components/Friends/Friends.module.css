@@ -2,6 +2,9 @@
 
 .sidebarFriends {
     padding: 20px 5%;
+    /* flex-direction: row; */
+    display: flex;
+    flex-direction: column;
 }
 
 .friendsBlock {
