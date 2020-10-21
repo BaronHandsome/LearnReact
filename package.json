@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "eslint": "^7.11.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
@@ -36,5 +35,8 @@
   "main": "index.js",
   "repository": "https://github.com/BaronHandsome/LearnReact.git",
   "author": "Alexander-Shebanov <legionqq996@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.11.0"
+  }
 }
