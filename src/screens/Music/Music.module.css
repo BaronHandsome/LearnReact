@@ -1,0 +1,13 @@
+.mainBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.musicPage {
+    padding: 20px 5%;
+    flex: 5;
+}
+
+.flex {
+    display: flex;
+}

@@ -1,4 +1,16 @@
-.contentImg {
-    display: block;
-    width: 100%;
+.mainBlock {
+    margin-top: 50px;
+    margin-right: 700px; 
+    /* Исправить! */
+}
+
+.contentBlock {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.content {
+    margin: 0;
+    font-size: 1.3em;
 }

@@ -1,7 +1,6 @@
 .sidebarFriends { grid-area: sidebar; }
 
 .sidebarFriends {
-    padding: 20px 5%;
     /* flex-direction: row; */
     display: flex;
     flex-direction: column;
@@ -9,6 +8,8 @@
 
 .friendsBlock {
     display: flex;
+    height: 51px;
+   margin-top: 8px;
 }
 
 .photo {
@@ -21,4 +22,5 @@
     margin-top: 10px;
     margin-left: 5px;
     font-size: 1.5em;
+    margin: 0;
 }

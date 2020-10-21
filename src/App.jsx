@@ -1,34 +1,23 @@
 import React from 'react';
 import './App.css';
-import MainPage from './components/MyPage/MainPage';
-import Header from './components/Header/Header';
-import Nav from './components/Navigation/Navigation';
-import Sidebar from './components/Sidebar/Sidebar';
-import Footer from './components/Footer/Footer';
-import { DialogsContainer } from './components/Dialogs/DialogsContainer';
+import { MainPage, Music, News, Dialogs } from './screens/index'; 
+import {  Footer, Header, Nav } from './components/index'; 
 import { BrowserRouter, Route } from 'react-router-dom';
-import { News } from './components/News/News';
-import { Music } from './components/Music/Music';
-import { Friends } from './components/Friends/Friends';
-import { Artists } from './components/Artists/Artists';
+import { post, newArray } from './data/state';
 
-const App = () => {
+const App = (props) => {
   return (
     <BrowserRouter>
       <div className='app-wrapper'>
         <Header />
         <Nav />
         <div className='content'>
-          <Route path='/MyPage' component={MainPage} />
-          <Route path='/Dialogs' component={DialogsContainer} />
+          <Route path='/MyPage' render={() => <MainPage post={props.post} likesCount={props.likesCount}/>}/>
+          <Route path='/Dialogs' render={() => <Dialogs messages={newArray} />}/>
           <Route path='/News' component={News} />
           <Route path='/Music' component={Music} />
           <Route />
         </div>
-        {/* <Sidebar >
-          <Route path='/Friends' component={Friends}/>
-          <Route path='/Artists' component={Artists}/>
-        </Sidebar> */}
         <Footer />
       </div>
     </BrowserRouter>
@@ -36,3 +25,5 @@ const App = () => {
 }
 
 export default App;
+
+{/* <Route path='/Dialogs' render={() => <DialogsContainer messages={props.messages} />}/> */}
