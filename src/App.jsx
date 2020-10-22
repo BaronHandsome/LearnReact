@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { MainPage, Music, News, Dialogs } from './screens/index'; 
-import {  Footer, Header, Nav } from './components/index'; 
+import {  Footer, Header, Nav } from './components/index';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { post, newArray } from './data/state';
 

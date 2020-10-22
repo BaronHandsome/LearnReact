@@ -6,7 +6,6 @@ import * as serviceWorker from './serviceWorker';
 import { newArray, posts } from './data/state';
 
 
-
 // let oldArray = [
 //   {mess: 'DASsssssssssdsadsfi'},
 //   {mess: 'DASasdddddddddddddddddddddddddddddddddddddddddddddddddddddddddi'},
