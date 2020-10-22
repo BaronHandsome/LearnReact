@@ -1,10 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import { newArray, posts } from './data/state';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import { newArray, posts } from "./data/state";
 
 // let oldArray = [
 //   {mess: 'DASsssssssssdsadsfi'},
@@ -18,9 +17,13 @@ import { newArray, posts } from './data/state';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App messages={newArray} posts={posts.message} likesCount={posts.likesCount} />
+    <App
+      messages={newArray}
+      posts={posts.message}
+      likesCount={posts.likesCount}
+    />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
